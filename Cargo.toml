@@ -1,0 +1,13 @@
+[package]
+name = "wasm-ctr"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hex = "0.4.3"
+hyper_wasi = { version = "0.15", features = ["full"] }
+rand = "0.8.5"
+sha3 = "0.10.8"
+tokio_wasi = { version = "1", features = ["sync", "macros", "io-util", "rt", "time"] }
